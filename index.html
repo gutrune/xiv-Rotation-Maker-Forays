@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FFXIV Rotation Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>FFXIV Rotation Builder</h1>
+        
+        <!-- Job Selection Dropdown -->
+        <select id="job-select">
+            <option value="all">All Jobs</option>
+            <option value="warrior">Warrior</option>
+            <option value="black_mage">Black Mage</option>
+            <option value="dragoon">Dragoon</option>
+            <!-- Add more jobs here -->
+        </select>
+
+        <!-- Abilities Display Area -->
+        <div id="ability-list"></div>
+
+        <!-- Rotation Timeline -->
+        <h3>Rotation Timeline</h3>
+        <div id="rotation-timeline" class="timeline" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <!-- GCDs and oGCDs will be dropped here -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
